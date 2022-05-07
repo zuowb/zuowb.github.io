@@ -23,13 +23,13 @@
             document.getElementById('google').style.opacity = (op + 1) % 2;
         }
 
-        function last() {
-            var n = new Date();
-            n = n.getSeconds();
-            n = n % 10;
-            var name = "bg/" + n + ".png";
-            document.body.style.backgroundImage = 'url("' + name + '")';
-        }
+        // function last() {
+        //     var n = new Date();
+        //     n = n.getSeconds();
+        //     n = n % 10;
+        //     var name = "bg/" + n + ".png";
+        //     document.body.style.backgroundImage = 'url("' + name + '")';
+        // }
         function deadline() {
 
             var CET = new Date('2022','4','22','15','0','0');
@@ -49,7 +49,7 @@
     </script>
 </head>
 
-<body onload="last(),deadline()">
+<body onload="deadline()">
 
     <nav id="top-nav">
         <div><a href="">demo</a></div>

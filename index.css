@@ -18,6 +18,7 @@ body {
     position: relative;
     background: no-repeat;
     background-size: cover;
+    background-color: antiquewhite;
 }
 
 #top-nav {
