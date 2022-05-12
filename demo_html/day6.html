@@ -1,0 +1,103 @@
+<!-- 定位 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day6</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            text-decoration: none;
+        }
+        li {
+            list-style: none;
+        }
+        .tb-promo {
+            position: relative;
+            width: 520px;
+            height: 280px;
+            margin: 100px auto;
+        }
+        .tb-promo img {
+            width: 520px;
+            height: 280px;
+            border-radius: 12px;
+        }
+        .pre,.next {
+            position: absolute;
+            height: 40px;
+            width: 25px;
+            top:50%;
+            margin-top: -20px;
+            background-color: rgba(0, 0, 0, .3);
+            line-height: 40px;
+            text-align: center;
+            color: #fff;
+            font-size: 20px;
+
+        }
+        .pre:hover,.next:hover {
+            background-color: rgba(0, 0, 0, .7);;
+        }
+        .pre {
+            left: 0px;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+        }
+        .next {
+            right: 0px;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+
+        }
+        .bottom {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            margin-left: -35px;
+            width: 70px;
+            height: 13px;
+            background-color: rgba(255, 255, 255, .3);
+            border-radius: 7px;
+        }
+        .bottom li {
+            float: left;
+        }
+
+        .bottom  li a {
+            display: block;
+
+            width: 8px;
+            height: 8px;
+            background-color: #fff;
+            border-radius: 50%;
+            margin: 3px;
+        }
+        .bottom li a:hover {
+            background-color: #ff5500;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="tb-promo" href="">
+        <img src="tb-轮播.png" alt="">
+        <a href="" class="pre">&lt;</a>
+        <a href="" class="next">&gt;</a>
+        <ul class="bottom">
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+        </ul>
+        
+    </div>
+</body>
+</html>

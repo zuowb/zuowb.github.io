@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    background: rgb(0, 2, 19);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .rocket {
+    position: relative;
+    animation: shake 0.2s linear infinite;
+}
+
+@keyframes shake {
+    0%,100%{
+        transform: translateY(-2px);
+    }
+    50%{
+        transform: translateY(2px);
+    }
+}
+
+.container .rocket::after {
+    content: '';
+    width: 30px;
+    height: 150px;
+    background:radial-gradient(rgb(239, 250, 86),rgb(236, 50, 17));
+    position: absolute;
+    left: 50%;
+    transform: translate(-36%);
+    bottom:-137px;
+}

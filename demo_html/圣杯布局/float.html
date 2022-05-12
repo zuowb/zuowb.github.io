@@ -1,0 +1,43 @@
+<!-- 利用左右浮动，已经浮动的特性————————不遮盖内容。 -->
+
+<!-- 简单方便，但是页面加载顺序不太对，中间不能优先加载。 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+
+    <style>
+        div {
+            height: 100%;
+            color: black;
+        }
+        .left {
+            float: left;
+            width: 120px;
+            background-color: red;
+        }
+        .right {
+            float: right;
+            width: 120px;
+            background-color: blue;
+        }
+        .center {
+            
+            width: 100%;
+            background-color: antiquewhite;
+        }
+    </style>
+
+
+
+</head>
+<body>
+    <div class="left">left-第一个加载</div>
+    <div class="right">right-第二个加载</div>
+    <div class="center">center-第三个加载</div>
+</body>
+</html>

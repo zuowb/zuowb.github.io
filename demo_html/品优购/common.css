@@ -1,0 +1,386 @@
+
+/* 上边框 */
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?tomleg');
+    src: url('fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?tomleg') format('truetype'),
+        url('fonts/icomoon.woff?tomleg') format('woff'),
+        url('fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon';
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+
+.top_box {
+    width: 100%;
+    height: 31px;
+    background-color: #f1f1f1;
+    margin-bottom: 25px;
+}
+
+.top_box header {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+
+}
+
+.top_box header p {
+    float: left;
+    height: 31px;
+    text-decoration: none;
+    color: #666;
+    font-size: 12px;
+    line-height: 31px;
+}
+
+.top_box header>a {
+    float: left;
+    height: 100%;
+    font-size: 12px;
+    line-height: 31px;
+    margin-left: 8px;
+    color: #666;
+}
+
+.top_box header ul {
+    float: right;
+}
+
+.top_box header ul li {
+    float: left;
+    height: 31px;
+    line-height: 31px;
+}
+
+.top_box header ul li a {
+    font-size: 12px;
+    padding: 0 10px;
+    border-right: 1px solid #666;
+    color: #666;
+}
+
+.top_box header ul li a:hover {
+    color: #b1191a;
+}
+
+.top_box header ul li a::after {
+    font-family: 'icomoon';
+    content: '\e91e';
+    font-size: 12px;
+    margin-left: 4px;
+
+}
+
+.top_box header ul li:last-child a {
+    border: 0;
+}
+
+.search {
+
+    width: 1200px;
+    height: 62px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+}
+
+.search .logo {
+    float: left;
+    background: url('imges/logo.png') no-repeat;
+    width: 171px;
+    height: 62px;
+}
+.search .logo h1 a {
+    display: block;
+    width: 171px;
+    height: 62px;
+    background: url('imges/logo.png') no-repeat;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+.search .search_box {
+    position: relative;
+    float: left;
+    height: 62px;
+    width: 540px;
+    margin-left: 140px;
+
+}
+
+.search .search_box input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 460px;
+    height: 40px;
+    border: 1px solid #b1191a;
+    outline: none;
+}
+
+.search .search_box button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    background-color: #b1191a;
+    border: 0;
+    color: white;
+}
+
+.search .search_box ul {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 22px;
+}
+
+.search .search_box ul li {
+    float: left;
+    line-height: 22px;
+    margin-right: 10px;
+}
+
+.search .search_box ul li a {
+    font-size: 12px;
+    color: #666;
+}
+
+.search .search_box ul li a:hover {
+    color: #b1191a;
+}
+
+.search .car {
+    position: relative;
+    float: right;
+    width: 144px;
+    height: 40px;
+    background-color: #f7f7f7;
+    line-height: 40px;
+    font-size: 12px;
+
+}
+
+.search .car::before {
+    content: '\e93a';
+    font-family: 'icomoon';
+    color: #b1191a;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.search .car::after {
+    float: right;
+    content: '\e920';
+    font-family: 'icomoon';
+    font-size: 12px;
+    margin-right: 5px;
+
+}
+
+.search .car .dot {
+    position: absolute;
+    left: 100px;
+    top: -5px;
+    padding:0 5px;
+    height: 18px;
+    border-radius: 9px 9px 9px 0;
+    background-color: #e60012;
+    color: white;
+    line-height: 18px;
+}
+
+.index {
+    width: 1200px;
+    height: 50px;
+
+    margin: 0 auto;
+    border-bottom: 2px solid #b1191a;
+}
+
+.index>a {
+    float: left;
+    height: 50px;
+    width: 210px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #b1191a;
+    color: white;
+}
+
+.index ul {
+    float: left;
+}
+
+.index ul li {
+    float: left;
+    height: 50px;
+    line-height: 50px;
+}
+
+.index ul li a {
+    font-size: 16px;
+    padding: 0 18px;
+    color: black;
+}
+
+.index ul li a:hover {
+    color: #b1191a;
+}
+
+
+/* 下边框 */
+
+.footer {
+    height: 418px;
+    width: 100%;
+    background-color:#f5f5f5;
+}
+
+.footer .f1 {
+    height: 110px;
+    width: 1200px;
+    margin: 0 auto;
+
+    border-bottom: 1px solid #e4e4e4;
+}
+.footer .f1 .f1_pic {
+    float: left;
+    width: 240px;
+    height: 100%;
+    padding-top: 30px;
+    
+}
+
+.footer .f1 .f1_pic .f1_pic_p1 {
+    float: left;
+    width: 51px;
+    height: 51px;
+    background: url('imges/icons.png') -253px -2px;
+    margin-right: 5px;
+    
+}
+.footer .f1 .f1_pic .f1_pic_p2 {
+    float: left;
+    width: 51px;
+    height: 51px;
+    background: url('imges/icons.png') -253px -53px;
+    margin-right: 5px;
+    
+}
+.footer .f1 .f1_pic .f1_pic_p3 {
+    float: left;
+    width: 51px;
+    height: 51px;
+    background: url('imges/icons.png') -255px -104px;
+    margin-right: 5px;
+    
+}
+.footer .f1 .f1_pic .f1_pic_p4 {
+    float: left;
+    width: 51px;
+    height: 51px;
+    background: url('imges/icons.png') -256px -155px;
+    margin-right: 5px;
+    
+}
+.footer .f1 .f1_pic .f1_pic_p5 {
+    float: left;
+    width: 51px;
+    height: 51px;
+    background: url('imges/icons.png') -254px -208px;
+    margin-right: 5px;
+    
+}
+.footer .f2 {
+    height: 190px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.footer .f2 .mod_help_nav {
+    float: left;
+    width: 200px;
+    height: 100%;
+    padding-top: 20px;
+}
+
+.footer .f2 .mod_help_nav .mod_help_nav_tit {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+}
+
+.footer .f2 .mod_help_nav .mod_help_nav_con li {
+    margin: 2px 0;
+    font-size: 12px;
+}
+
+.footer .f3 {
+    
+    width: 1200px;
+    margin: 0 auto;
+    height:118px;
+    text-align: center;
+}
+
+.footer .f3 a {
+    font-size: 12px;
+
+}
+
+.footer .f3 span {
+
+    margin: 0 2px;
+    font-size: 12px;
+}
+
+.footer .f3 a:hover {
+    color: #e60012;
+}
+
+.footer .f3 p {
+    font-size: 12px;
+    
+}

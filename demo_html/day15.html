@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chome-icon</title>
+    <style>
+        .round {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            margin: 100px auto;
+            border-radius: 50%;
+            border: 10px solid black;
+        }
+
+        .ro {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 5px solid black;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            
+        }
+
+        .rec1 {
+            position:absolute;
+            width: 50px;
+            height: 45px;
+            left: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+            border-top: 5px solid black;
+        }
+        .rec2 {
+            position:absolute;
+            width: 50px;
+            height: 45px;
+            left: 50%;
+            top: 50%;
+            transform-origin: left 25px;
+            transform: translateY(-50%) rotate(120deg);
+            border-top: 5px solid black;
+            
+        }
+        .rec3 {
+            position:absolute;
+            width: 50px;
+            height: 45px;
+            left: 50%;
+            top: 50%;
+            transform-origin: left 25px;
+            transform: translateY(-50%) rotate(240deg);
+            border-top: 5px solid black;
+
+
+        }
+    </style>
+</head>
+<body>
+    
+<div class="round">
+    <div class="ro"></div>
+    <div class="rec1"></div>
+    <div class="rec2"></div>
+    <div class="rec3"></div>
+</div>
+
+</body>
+</html>

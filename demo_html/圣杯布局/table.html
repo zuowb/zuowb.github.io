@@ -1,0 +1,47 @@
+<!-- table布局 -->
+<!-- table的宽度会被每个列分配完毕，可以指定左右宽度，中间就获得剩下的 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <link rel="stylesheet" href="common.css">
+
+    <style>
+        .box {
+            display:table;
+            width: 100%;
+        }
+        .box div {
+            display: table-cell;
+        }
+
+        .left {
+            width: 120px;
+            
+            background-color: red;
+        }
+        .center {
+            
+            background-color: antiquewhite;
+        }
+        .right{
+            width: 120px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="left">left</div>
+        <div class="center">center</div>
+        <div class="right">right</div>
+
+    </div>
+</body>
+
+</html>

@@ -17,8 +17,9 @@ a {
 body {
     position: relative;
     
-    background: no-repeat url('icon/1.png');
+    /* background: no-repeat; */
     background-size: cover;
+    background-image: linear-gradient(to right,#12c2e9,#c471ed,#f64f59);
    
 }
 

@@ -1,0 +1,51 @@
+<!-- 使用absolute 定位。 -->
+<!-- 脱离了标准文档流，center内容会被两边遮盖住 添加padding就行了-->
+<!-- 或者，让三个盒子都绝对定位，规定center的left和right -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="common.css">
+    <style>
+        div {
+            height: 100%;
+            position: absolute;
+        }
+        .left {
+            
+            left: 0;
+            top: 0;
+            width: 120px;
+            
+            background-color: red;
+        }
+        .center {
+            left: 120px;
+            right: 120px;
+            min-width: 100px;
+            background-color: blue;
+            
+        }
+        .right {
+            
+            right: 0;
+            top: 0;
+            width: 120px;
+            background-color: antiquewhite;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    
+    <div class="left">left</div>
+    
+    <div class="right">right</div>
+    <div class="center">center</div>
+</body>
+</html>

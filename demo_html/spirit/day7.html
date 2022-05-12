@@ -1,0 +1,82 @@
+<!-- 显示 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day7</title>
+    <style>
+        .bbox {
+            display: block;
+            position: relative;
+
+            width: 520px;
+            height: 280px;
+            margin: 100px auto;
+            background-color:aqua;
+        }
+
+        .box {
+            position: absolute;
+            display: none;
+            left: 0;
+            top:0;
+            background-color: rgba(0,0,0,.3);
+            width: 100%;
+            height: 100%;
+
+        }
+        .bbox:hover .box{
+            display: block;
+        }
+       
+        .box img {
+            width: 100%;
+            height: 100%;
+        }
+        .sprite {
+            width: 383px;
+            height: 112px;
+            margin: 50px auto;
+            text-align:center;
+            background-color: aqua;
+        }
+        .sprite .z {
+            float: left;
+            width: 120px;
+            height: 112px;
+            background: url('abcd.jpg') -480px -557px;
+        }
+        .sprite .w {
+            float: left;
+            width: 143px;
+            height: 112px;
+            background: url('abcd.jpg') -112px -557px;
+        }
+        .sprite .b {
+            float: left;
+            width: 120px;
+            height: 112px;
+            background: url('abcd.jpg') -112px -10px;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="bbox">
+    <div class="box">1</div>
+    <img src="tb-轮播.png" alt="">
+</div>
+<div class="sprite">
+    <div class="z"></div>
+    <div class="w"></div>
+    <div class="b"></div>
+</div>
+</body>
+
+</html>

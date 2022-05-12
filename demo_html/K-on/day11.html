@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day11</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* box-sizing: border-box; */
+        }
+       
+        /* .box {
+            position: relative;
+            margin: 100px auto;
+            width: 200px;
+            height: 100px;
+            overflow: hidden;
+        }
+        .box .img1 {
+            position: absolute;
+            left: 200px;
+            top:0;
+            width: 100%;
+            height: 100%;
+            background-color: blue;
+            transition: left 5s linear;
+        }
+
+        .box:hover .img1 {
+            left: -200px;
+        }
+        .box .img2 {
+            position: absolute;
+            left: 200px;
+            top:0;
+            width: 100%;
+            height: 100%;
+            background-color: purple;
+            transition: left 5s linear 2.5s ;
+        }
+
+        .box:hover .img2 {
+            left: -200px;
+        } */
+        .kon {
+            left: calc(100%-450px);
+            top: calc(100%-311px);
+            position: relative;
+            width: 450px;
+            height: 311px;
+            
+            overflow: hidden;
+        }
+        .kon img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .kon .img1{
+            position: absolute;
+            top: 0;
+            left: 100%;
+            background: url('kon_girl.png') no-repeat;
+            width: 100%;
+            height: 100%;
+            animation: kon1 5s linear  infinite;
+        }
+        @keyframes kon1{
+            0%{left:100%;}
+            100%{left:-100%;}
+        }
+        .kon .img2{
+            position: absolute;
+            top: 0;
+            left: 100%;
+            background: url('kon_girl.png') no-repeat;
+            width: 100%;
+            height: 100%;
+            animation: kon2 5s linear 2.5s infinite;
+        }
+        @keyframes kon2{
+            0%{left:100%;}
+            100%{left:-100%;}
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+    <!-- <div class="box">
+        <div class="img1"></div>
+        <div class="img2"></div>
+    </div> -->
+
+    <div class="kon">
+        <img src="kon_title.png" alt="">
+        <div class="img1"></div>
+        <div class="img2"></div>
+    </div>
+
+
+</body>
+</html>

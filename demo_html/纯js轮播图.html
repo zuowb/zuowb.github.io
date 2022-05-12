@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js轮播图</title>
+    <link rel="stylesheet" href="common.css">
+    <style>
+        body {
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        ul#banner {
+            width: 600px;
+            height: 200px;
+            background-color: aqua;
+            position: relative;
+        }
+        li{
+            position: absolute;
+            float: left;
+            width: 300px;
+            height: 200px;
+            left: 0;
+            transition: 0.4s;
+        }
+       
+    </style>
+  
+
+</head>
+<body>
+    <ul id="banner">
+        
+    </ul> 
+    <script>
+        let timer=setInterval(get_next,1000);
+        var parent_ul = document.getElementById('banner');
+        let list_img = new Array();
+        for(var i=0;i<6;i++)
+        {
+            var create_li = document.createElement('li');
+            var create_li_img = document.createElement('img');
+            create_li_img.src='material/'+i+'.png';
+            create_li.appendChild(create_li_img);
+            parent_ul.appendChild(create_li);
+            list_img.push(create_li);
+        }
+        let len=list_img.length-1;
+        list_img[len-2].style.left='0px';
+        list_img[len-1].style.zIndex=100;
+        list_img[len-1].style.left='150px';
+        list_img[len-1].style.transform="scale(1.3)";
+        list_img[len].style.left='300px';
+
+        function get_next(){
+            let give_up = list_img[len];
+            list_img.pop();
+            list_img.unshift(give_up);
+            for(var i=0;i<6;i++)
+            {
+                list_img[i].style.zIndex=i;
+                list_img[i].style.transform="scale(1)";
+            }
+            list_img[len-2].style.left='0px';
+            list_img[len-1].style.zIndex=100;
+            list_img[len-1].style.left='150px';
+            list_img[len-1].style.transform="scale(1.3)";
+            list_img[len].style.left='300px';
+        }
+        
+        
+
+
+
+        
+    </script>
+</body>
+</html>
